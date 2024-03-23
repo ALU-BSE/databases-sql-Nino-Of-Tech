@@ -1,0 +1,6 @@
+db.transactions.aggregate([
+  {$match: {buyerID: ObjectId("...")}},
+  {$lookup: {from: "products", localField: "productID", foreignField: "_id", as: "productInfo"}},
+  {$unwind: "$productInfo"},
+  {$group: {_id: "$buyerID", totalAmount: {$sum: {$multiply: ["$quantity", "$productInfo.price"]}}}}
+])
