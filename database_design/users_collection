@@ -1,0 +1,2 @@
+db.createCollection("Users")
+db.Users.createIndex({ name: 1 }, { unique: true }) // Create index on name field
