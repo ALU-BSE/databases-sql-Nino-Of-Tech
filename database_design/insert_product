@@ -1,1 +1,1 @@
-db.products.insertOne({ name: "Dell Laptop", description: "Windows Laptop", price: $235.00 });
+db.products.insertOne({ name: "Dell Laptop", description: "Windows Laptop", price: $235});
