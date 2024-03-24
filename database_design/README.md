@@ -22,8 +22,6 @@ The project consists of the following components:
 
 - Queries: MongoDB queries for advanced operations such as finding products listed by a specific user, calculating the total amount spent by a user, and identifying the top 5 most popular products.
 
-- README: This file, providing an overview of the project and instructions for use.
-
 
 ## Usage :white_check_mark:
 To set up and test the TechShop database system, follow these steps:
