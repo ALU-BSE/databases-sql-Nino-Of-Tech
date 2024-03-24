@@ -1,0 +1,3 @@
+db.Products.aggregate([
+  { $group: { _id: "$user_id", count: { $sum: 1 } } }
+])
